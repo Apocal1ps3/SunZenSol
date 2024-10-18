@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="company-name">
+            <h3>SunZen</h3>
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="hamburger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#intro">Intro</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#services">Services</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="Planet-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container">
+            <h2>Sun-Powered</h2> 
+            <h2>Zen-Minded</h2>
+            <p>Let Nature Charge Your Future</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefit-section">
+        <!-- Benefit 1 -->
+        <div class="benefit-item">
+            <div class="background-image" style="background-image: url('benefit1.jpg');">
+                <div class="benefit-overlay">
+                    <div class="benefit-number">1</div>
+                    <div class="benefit-content">
+                        <h2>Maximize Your Savings Potential</h2>
+                    </div>
+                    <div class="benefit-small-text">
+                        <p>Experience significant cost savings and improved profitability with tailored energy solutions.</p>
+                    </div>
+                    <div class="benefit-description-box">
+                        <p>Reduce your energy costs by up to 30% with tailored renewable energy solutions...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Benefit 2 -->
+        <div class="benefit-item">
+            <div class="background-image" style="background-image: url('benefit2.jpg');">
+                <div class="benefit-overlay">
+                    <div class="benefit-number">2</div>
+                    <div class="benefit-content">
+                        <h2>Clean, Sustainable Energy</h2>
+                    </div>
+                    <div class="benefit-small-text">
+                        <p>Reduce your carbon footprint and enhance sustainability with clean energy solutions.</p>
+                    </div>
+                    <div class="benefit-description-box">
+                        <p>Our expert team helps you transition to clean energy sources while maintaining efficiency...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Benefit 3 -->
+        <div class="benefit-item">
+            <div class="background-image" style="background-image: url('benefit3.jpeg');">
+                <div class="benefit-overlay">
+                    <div class="benefit-number">3</div>
+                    <div class="benefit-content">
+                        <h2>Gain a Competitive Edge</h2>
+                    </div>
+                    <div class="benefit-small-text">
+                        <p>Position your business as a leader in sustainability with eco-conscious energy practices.</p>
+                    </div>
+                    <div class="benefit-description-box">
+                        <p>Stand out in your industry with a strong focus on sustainable energy and efficiency...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Bespoke Service</h2>
+        <div class="service-list">
+            <div class="service-item" data-service="1">
+                <div class="service-number">1</div>
+                <div class="service-title">Renewable Energy Consulting</div>
+                <div class="service-toggle">=</div>
+            </div>
+            <div class="service-detail" id="service-detail-1">
+                <div class="detail-content">
+                    <div class="detail-image">
+                        <img src="service1.jpg" alt="Consulting">
+                    </div>
+                    <div class="detail-text">
+                        <h4>Expert Consultation</h4>
+                        <p>Partner with experts to develop a customized renewable energy strategy...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item" data-service="2">
+                <div class="service-number">2</div>
+                <div class="service-title">Energy Efficiency Solutions</div>
+                <div class="service-toggle">=</div>
+            </div>
+            <div class="service-detail" id="service-detail-2">
+                <div class="detail-content">
+                    <div class="detail-image">
+                        <img src="service2.jpg" alt="Efficiency">
+                    </div>
+                    <div class="detail-text">
+                        <h4>Tailored Solutions</h4>
+                        <p>Solutions to reduce energy costs and enhance sustainability...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item" data-service="3">
+                <div class="service-number">3</div>
+                <div class="service-title">Renewable Energy Project Development</div>
+                <div class="service-toggle">=</div>
+            </div>
+            <div class="service-detail" id="service-detail-3">
+                <div class="detail-content">
+                    <div class="detail-image">
+                        <img src="service3.jpg" alt="Project Development">
+                    </div>
+                    <div class="detail-text">
+                        <h4>Comprehensive Development</h4>
+                        <p>Comprehensive development of renewable energy infrastructure...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Hidden detailed content for service 2 -->
+        <div id="service-detail-2" class="service-detail">
+            <div class="detail-header">
+                <h3>Energy Efficiency Solutions</h3>
+                <span class="close-detail">&times;</span>
+            </div>
+            <div class="detail-content">
+                <h4>Tailored Solutions</h4>
+                <p>Solutions to reduce energy costs and enhance sustainability...</p>
+                <img src="service2.jpg" alt="Energy Efficiency Solutions">
+            </div>
+        </div>
+
+        <!-- Hidden detailed content for service 3 -->
+        <div id="service-detail-3" class="service-detail">
+            <div class="detail-header">
+                <h3>Renewable Energy Project Development</h3>
+                <span class="close-detail">&times;</span>
+            </div>
+            <div class="detail-content">
+                <h4>Project Development</h4>
+                <p>Comprehensive development of renewable energy infrastructure...</p>
+                <img src="service3.jpg" alt="Renewable Energy Project Development">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"SunZen solutions have saved us thousands annually."</p>
+                <h4>Pešons, Š&P</h4>
+            </div>
+            <div class="testimonial">
+                <p>"We've gained a competitive edge thanks to their expertise."</p>
+                <h4>Zigis, AgriCult</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>&copy; 2024 SunZen Solutions</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
