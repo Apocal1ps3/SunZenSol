@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company</title>
+    <title>SunZen Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,25 +14,26 @@
             <h3>SunZen</h3>
             <!-- Dropdown Menu -->
             <div class="dropdown">
-                <button class="dropbtn">
+                <button class="dropbtn" onclick="toggleMenu()">
                     <div class="hamburger-icon">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#intro">Intro</a>
-                    <a href="#benefits">Benefits</a>
-                    <a href="#services">Services</a>
-                    <a href="#testimonials">Testimonials</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#top">Sākums</a>
+                    <a href="#benefits">Ieguvumi</a>
+                    <a href="#services">Pakalpojumi</a>
+                    <a href="#testimonials">Atsauksmes</a>
+                    <a href="#contact">Kontakti</a>
                 </div>
         </div>
     </header>
     
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="top" class="hero">
         <div class="video-background">
             <video autoplay muted loop playsinline>
                 <source src="Planet-video.mp4" type="video/mp4">
@@ -40,9 +41,9 @@
             </video>
         </div>
         <div class="container">
-            <h2>Sun-Powered</h2> 
-            <h2>Zen-Minded</h2>
-            <p>Let Nature Charge Your Future</p>
+            <h2>Saules - enerģija</h2> 
+            <h2>Zen - harmonija</h2>
+            <p>Ļauj Dabai Uzlādēt Tavu Nākotni</p>
         </div>
     </section>
 
@@ -52,15 +53,14 @@
         <div class="benefit-item">
             <div class="background-image" style="background-image: url('benefit1.jpg');">
                 <div class="benefit-overlay">
-                    <div class="benefit-number">1</div>
                     <div class="benefit-content">
-                        <h2>Maximize Your Savings Potential</h2>
+                        <h2>Palieliniet savas ietaupījumu iespējas</h2>
                     </div>
                     <div class="benefit-small-text">
-                        <p>Experience significant cost savings and improved profitability with tailored energy solutions.</p>
+                        <p>SunZen solutions piedāvā modernus un efektīvus elektroenerģijas sistēmu risinājumus mājsaimniecībām</p>
                     </div>
                     <div class="benefit-description-box">
-                        <p>Reduce your energy costs by up to 30% with tailored renewable energy solutions...</p>
+                        <p>Samaziniet savas enerģijas izmaksas līdz pat 30% ar pielāgotiem atjaunojamās enerģijas risinājumiem...</p>
                     </div>
                 </div>
             </div>
@@ -70,15 +70,14 @@
         <div class="benefit-item">
             <div class="background-image" style="background-image: url('benefit2.jpg');">
                 <div class="benefit-overlay">
-                    <div class="benefit-number">2</div>
                     <div class="benefit-content">
-                        <h2>Clean, Sustainable Energy</h2>
+                        <h2>Tīra, ilgtspējīga enerģija</h2>
                     </div>
                     <div class="benefit-small-text">
-                        <p>Reduce your carbon footprint and enhance sustainability with clean energy solutions.</p>
+                        <p>Mūsu mērķis ir palīdzēt izvēlēties un ieviest risinājumus, kas nesīs tūlītējus un izmērāmus ieguvumus Jūsu ikdienā</p>
                     </div>
                     <div class="benefit-description-box">
-                        <p>Our expert team helps you transition to clean energy sources while maintaining efficiency...</p>
+                        <p>Mūsu komanda un piesaistītie sertificētie speciālisti nodrošina pilna servisa pakalpojumus...</p>
                     </div>
                 </div>
             </div>
@@ -86,17 +85,16 @@
     
         <!-- Benefit 3 -->
         <div class="benefit-item">
-            <div class="background-image" style="background-image: url('benefit3.jpeg');">
+            <div class="background-image" style="background-image: url('benefit3.jpg');">
                 <div class="benefit-overlay">
-                    <div class="benefit-number">3</div>
                     <div class="benefit-content">
-                        <h2>Gain a Competitive Edge</h2>
+                        <h2>Iegūstiet konkurētspējīgas priekšrocības</h2>
                     </div>
                     <div class="benefit-small-text">
-                        <p>Position your business as a leader in sustainability with eco-conscious energy practices.</p>
+                        <p>Pozicionējiet savu uzņēmumu kā līderi ilgtspējībā ar videi draudzīgām enerģijas praksēm</p>
                     </div>
                     <div class="benefit-description-box">
-                        <p>Stand out in your industry with a strong focus on sustainable energy and efficiency...</p>
+                        <p>Izcelieties savā nozarē, pievēršot lielu uzmanību ilgtspējīgai enerģijai un efektivitātei...</p>
                     </div>
                 </div>
             </div>
@@ -105,11 +103,11 @@
 
     <!-- Services Section -->
     <section id="services">
-        <h2>Bespoke Service</h2>
+        <h2>Pielāgoti pakalpojumu risinājumi</h2>
         <div class="service-list">
             <div class="service-item" data-service="1">
                 <div class="service-number">1</div>
-                <div class="service-title">Renewable Energy Consulting</div>
+                <div class="service-title">Saules paneļu ierīkošana</div>
                 <div class="service-toggle">=</div>
             </div>
             <div class="service-detail" id="service-detail-1">
@@ -118,15 +116,20 @@
                         <img src="service1.jpg" alt="Consulting">
                     </div>
                     <div class="detail-text">
-                        <h4>Expert Consultation</h4>
-                        <p>Partner with experts to develop a customized renewable energy strategy...</p>
+                        <h4>Ekspertu konsultācija</h4>
+                        <ul>
+                        <li>Atbalsts mājsaimniecības vajadzībām atbilstošākās sistēmas izvēlē</li>
+                        <li>Pārbaudītu un uzticamu saules paneļu un invertoru nodrošinājums</li>
+                        <li>Saules paneļu sistēmas izbūve</li>
+                        <li>Sistēmas nodošana ekspluatācijā, tostarp atbalsts saziņā ar AS Sadales tīkls</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="service-item" data-service="2">
                 <div class="service-number">2</div>
-                <div class="service-title">Energy Efficiency Solutions</div>
+                <div class="service-title">Elektoauto uzlādes staciju ierīkošana</div>
                 <div class="service-toggle">=</div>
             </div>
             <div class="service-detail" id="service-detail-2">
@@ -135,15 +138,18 @@
                         <img src="service2.jpg" alt="Efficiency">
                     </div>
                     <div class="detail-text">
-                        <h4>Tailored Solutions</h4>
-                        <p>Solutions to reduce energy costs and enhance sustainability...</p>
+                        <h4>Pārbaudīti risinājumi</h4>
+                        <ul>
+                        <li>Uzticamu un pārbaudītu uzlādes staciju iekārtu nodrošinājums</li>
+                        <li>Elektro uzlādes stacijas ierīkošana A-Z</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="service-item" data-service="3">
                 <div class="service-number">3</div>
-                <div class="service-title">Renewable Energy Project Development</div>
+                <div class="service-title">Gudrā enerģija un uzlāde</div>
                 <div class="service-toggle">=</div>
             </div>
             <div class="service-detail" id="service-detail-3">
@@ -152,51 +158,75 @@
                         <img src="service3.jpg" alt="Project Development">
                     </div>
                     <div class="detail-text">
-                        <h4>Comprehensive Development</h4>
-                        <p>Comprehensive development of renewable energy infrastructure...</p>
+                        <h4>Elektroenerģijas uzkrāšanas sistēmu ierīkošana</h4>
+                        <ul>
+                            <li>Uzticamu un pārbaudītu uzlādes staciju iekārtu nodrošinājums</li>
+                            <li>Elektro uzlādes stacijas ierīkošana A-Z</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="service-item" data-service="4">
+                <div class="service-number">4</div>
+                <div class="service-title">Inovācijas projektu attīstīšana</div>
+                <div class="service-toggle">=</div>
+            </div>
+            <div class="service-detail" id="service-detail-4">
+                <div class="detail-content">
+                    <div class="detail-image">
+                        <img src="service4.jpg" alt="Innovation development">
+                    </div>
+                    <div class="detail-text">
+                        <h4>Risinājumi nākotnei</h4>
+                        <ul>
+                            <li>Mēs aktīvi strādājam pie jaunu tehnoloģiju ieviešanas, kas Baltijā vai pat Eiropā ir pirmie šāda veida projekti</li>
+                            <li>Mūsu risinājumi uzlabo enerģijas izmantošanu un veicina ilgtspējīgu nākotni, ieviešot jaunākās tehnoloģijas</li>
+                            <li>Mēs piedāvājam stratēģiski attīstītus projektus, kas apvieno inovācijas un praktisku pielietojumu, lai izceltos tirgū</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item" data-service="5">
+                <div class="service-number">5</div>
+                <div class="service-title">Bezmaksas</div>
+                <div class="service-toggle">=</div>
+            </div>
+            <div class="service-detail" id="service-detail-5">
+                <div class="detail-content">
+                    <div class="detail-image">
+                        <img src="service5.jpg" alt="Cost free">
+                    </div>
+                    <div class="detail-text">
+                        <h4>Šīs izmaksas ir uz mums</h4>
+                        <ul>
+                            <li>Klienta vajadzību apzināšana</li>
+                            <li>Mājsaimniecības apsekošana un sākotnējās konsultācijas</li>
+                            <li>2 gadu garantija un attālināts sistēmas monitorings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <img src="Renewables.gif" alt="Experience Animation" class="experience-gif">
+        <h2>Mūsu pieredze</h2>
+            <p>Esam iesaistīti industriālo un mājsaimniecību saules paneļu sistēmu ierīkošanā projektos ar kopējo jaudu</p>
+            <div class="total-mw-installed">
+                <span class="mw-number" id="mwInstalled">5</span>
+                <span class="mw-label">MW</span>
+            </div>
     </section>
 
-        <!-- Hidden detailed content for service 2 -->
-        <div id="service-detail-2" class="service-detail">
-            <div class="detail-header">
-                <h3>Energy Efficiency Solutions</h3>
-                <span class="close-detail">&times;</span>
-            </div>
-            <div class="detail-content">
-                <h4>Tailored Solutions</h4>
-                <p>Solutions to reduce energy costs and enhance sustainability...</p>
-                <img src="service2.jpg" alt="Energy Efficiency Solutions">
-            </div>
-        </div>
-
-        <!-- Hidden detailed content for service 3 -->
-        <div id="service-detail-3" class="service-detail">
-            <div class="detail-header">
-                <h3>Renewable Energy Project Development</h3>
-                <span class="close-detail">&times;</span>
-            </div>
-            <div class="detail-content">
-                <h4>Project Development</h4>
-                <p>Comprehensive development of renewable energy infrastructure...</p>
-                <img src="service3.jpg" alt="Renewable Energy Project Development">
-            </div>
-        </div>
-    </section>
-    
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2>What Our Clients Say</h2>
+            <h2>Ko saka mūsu klienti</h2>
             <div class="testimonial">
-                <p>"SunZen solutions have saved us thousands annually."</p>
+                <p>"SunZen solutions ir palīdzējuši mums ietaupīt tūkstošus katru gadu"</p>
                 <h4>Pešons, Š&P</h4>
             </div>
             <div class="testimonial">
-                <p>"We've gained a competitive edge thanks to their expertise."</p>
+                <p>"Mēs esam ieguvuši konkurences priekšrocības, pateicoties viņu zināšanām un pieredzei"</p>
                 <h4>Zigis, AgriCult</h4>
             </div>
         </div>
@@ -205,14 +235,14 @@
     <!-- Footer Section -->
     <footer id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2>Sazienies ar mums</h2>
             <form action="submit_form.php" method="POST">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" placeholder="Jūsu vārds" required>
+                <input type="email" placeholder="Jūsu e-pasts" required>
+                <textarea placeholder="Jūsu ziņa" required></textarea>
+                <button type="submit">Nosūtīt ziņu</button>
             </form>
-            <p>&copy; 2024 SunZen Solutions</p>
+            <p>&copy; 2024 SunZen Solutions, e-pasts: sunzenlv@gmail.com</p>
         </div>
     </footer>
     <script src="script.js"></script>
