@@ -14,49 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    contactForm.addEventListener('submit', function(event) {
-        let isValid = true;
 
-        // Validate Name
-        const nameInput = document.getElementById('name');
-        const nameError = document.getElementById('nameError');
-        if (nameInput.value.trim() === "") {
-            nameError.style.display = 'block';
-            isValid = false;
-        } else {
-            nameError.style.display = 'none';
-        }
-
-        // Validate Email
-        const emailInput = document.getElementById('email');
-        const emailError = document.getElementById('emailError');
-        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-        if (!emailPattern.test(emailInput.value.trim())) {
-            emailError.style.display = 'block';
-            isValid = false;
-        } else {
-            emailError.style.display = 'none';
-        }
-
-        // Validate Message
-        const messageInput = document.getElementById('message');
-        const messageError = document.getElementById('messageError');
-        if (messageInput.value.trim() === "") {
-            messageError.style.display = 'block';
-            isValid = false;
-        } else {
-            messageError.style.display = 'none';
-        }
-
-        // Prevent form submission if validation fails
-        if (!isValid) {
-            event.preventDefault();
-        }
-    });
-});
 document.addEventListener('DOMContentLoaded', () => {
     const serviceItems = document.querySelectorAll('.service-item');
 
