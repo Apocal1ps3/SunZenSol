@@ -270,11 +270,11 @@ html {
 /* Small Text */
 .benefit-small-text {
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     left: 5%;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    width: 250px;
+    width: 350px;
     line-height: 1.5;
 }
 
@@ -304,185 +304,10 @@ html {
 }
 
 .benefit-section h2,
-.benefit-section p {
+.benefit-section p,
+.benefit-small-text {
     color: #ffffff; /* Keep text white */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add a subtle shadow */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Default Design */
-  .body {
-  
-    /* To make all elements center */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    /* Default Styling */
-    margin: 20px auto;
-    padding: 30px;
-    font-size: 30px;
-    width: 300px;
-    height: 300px;
-    background-color: darkseagreen;
-    color: black;
-  }
-  
-  /* For Desktop View */
-  @media screen and (min-width: 1024px) {
-    .body {
-      background-color: #63c971;
-      color: #fff;
-    }
-  }
-  
-  /* For Tablet View */
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .body {
-      width: 400px;
-      height: 400px;
-      background-color: orange;
-      color: black;
-    }
-  }
-  
-  /* For Mobile Portrait View */
-  @media screen and (max-device-width: 480px) and (orientation: portrait) {
-    .body {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      color: #fff;
-    }
-  }
-  
-  /* For Mobile Landscape View */
-  @media screen and (max-device-width: 640px) and (orientation: landscape) {
-    .body {
-      width: 400px;
-      height: 200px;
-      background-color: cyan;
-      color: black;
-    }
-  }
-  
-  /* For Mobile Phones Portrait or Landscape View */
-  @media screen and (max-device-width: 640px) {
-    .body {
-      width: 400px;
-      height: 200px;
-      background-color: chartreuse;
-      color: black;
-    }
-  }
-  
-  /* For iPhone 6 and 6 plus Portrait or Landscape View */
-  @media (min-device-height: 667px) and (min-device-width: 375px) and 
-         (-webkit-min-device-pixel-ratio: 3) {
-    .body {
-      width: 400px;
-      height: 400px;
-      background-color: darkgoldenrod;
-      color: black;
-    }
-  };
-
-/* Adjust font sizes for tablets (up to 1024px) */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2rem; /* Smaller font size for main headings */
-    }
-
-    h2 {
-        font-size: 1.6rem; /* Smaller font size for section headings */
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    p, .contact-info, .office-info, .social-btn {
-        font-size: 0.95rem; /* Reduce paragraph and button text */
-    }
-
-    .social-btn {
-        padding: 8px 16px; /* Adjust button padding */
-    }
-}
-
-/* Adjust font sizes for smartphones (up to 768px) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem; /* Main heading size */
-    }
-
-    h2 {
-        font-size: 1.4rem; /* Section heading size */
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p, .contact-info, .office-info, .social-btn {
-        font-size: 0.9rem; /* Reduce font size for paragraphs and buttons */
-    }
-
-    .social-btn {
-        padding: 6px 14px; /* Further reduce button padding */
-    }
-}
-
-/* Adjust font sizes for very small mobile screens (up to 480px) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.6rem; /* Further reduce main heading size */
-    }
-
-    h2 {
-        font-size: 1.2rem; /* Further reduce section heading size */
-    }
-
-    h3 {
-        font-size: 1rem;
-    }
-
-    p, .contact-info, .office-info, .social-btn {
-        font-size: 0.85rem; /* Smallest font size for paragraphs and buttons */
-    }
-
-    .social-btn {
-        padding: 5px 12px; /* Minimum padding for small buttons */
-    }
-}
-
-  @media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
 }
 
 /* Main service section */
@@ -574,7 +399,7 @@ h2 {
 /* Experience Section */
 .experience-gif {
     max-width: 100%; /* Ensures the GIF scales on smaller screens */
-    width: 800px; /* Adjust this size as needed */
+    width: auto; /* Adjust this size as needed */
     margin-bottom: 20px; /* Adds space between the GIF and the title */
 }
 
@@ -704,39 +529,58 @@ header, .hero {
     color: #cccccc;
 }
 
-/* Social Media Buttons */
+/* Social Media Links Styling */
 .social-links {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.social-btn {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
+.social-icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #ffffff; /* Icon color set to white */
+    background-color: #333; /* Fallback background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-btn.linkedin {
-    background-color: #0077b5;
+/* Brand Background Colors */
+.social-icon.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
 }
 
-.social-btn.facebook {
-    background-color: #3b5998;
+.social-icon.facebook {
+    background-color: #3b5998; /* Facebook Blue */
 }
 
-.social-btn.twitter {
-    background-color: #1da1f2;
+.social-icon.x-com {
+    background-color: #000000; /* X.com Black */
 }
 
-.social-btn:hover {
-    opacity: 0.8;
+/* Hover Effects with Animation */
+.social-icon:hover {
+    transform: scale(1.1) rotate(5deg); /* Slight enlargement and rotation */
+    box-shadow: 0px 0px 15px 5px rgba(0, 123, 255, 0.4); /* Glowing effect */
 }
 
+/* Individual Hover Glow Colors */
+.social-icon.linkedin:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 119, 181, 0.6); /* LinkedIn Blue Glow */
+}
+
+.social-icon.facebook:hover {
+    box-shadow: 0px 0px 15px 5px rgba(59, 89, 152, 0.6); /* Facebook Blue Glow */
+}
+
+.social-icon.x-com:hover {
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4); /* White Glow for X.com */
+}
 /* Link styling for contact email */
 .contact-info a {
     color: #1da1f2;
@@ -780,4 +624,95 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Mobile version */
+@media only screen and (max-width: 600px) {
+    .wrapper-main{
+        width: 100%
+    }
+    .benefit-content h2 {
+        font-size: 1.2rem;
+    }
+    .company-name {
+        font-size: 1rem; /* Adjust as needed */
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 0.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+        margin-bottom: 5px; /* Adjust this value for more or less space */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero .container {
+        padding-top: 100%; /* Add padding to push the text down */
+    }
+
+    .benefit-small-text {
+        font-size: 0.6rem;
+        width: 190px;
+        line-height: 1.5;
+    }
+
+    .benefit-description-box p {
+        margin: -10px;
+        font-size: 0.6rem;
+    }
+
+    .benefit-description-box {
+        line-height: 1.5;
+        max-width: 190px; /* Prevent the box from getting too wide */
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #services {
+        text-align: center;
+        padding: 0px 0px;
+        padding-bottom: 0px;
+    }
+
+    .service-item {
+        font-size: 1rem;
+    }
+
+    .service-number {
+        font-size: 1rem;
+    }
+
+    .service-toggle {
+        font-size: 1rem;
+    }
+
+    .detail-image img {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .detail-text h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .detail-text p {
+        font-size: 0.5rem;
+        color: #333;
+    }
+
+
+
 }

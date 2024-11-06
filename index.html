@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunZen Solutions</title>
-    <meta name="description" content="CSS Media Query for all devices
-                    like mobile, tablet, desktop etc.">
-    <meta name="viewport" content="width=device-width,
-                   initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Header Section -->
+    <div class="wrapper-main">
     <header>
         <div class="company-name">
             <h3>SunZen</h3>
@@ -216,7 +218,7 @@
         <h2>Mūsu pieredze</h2>
             <p>Esam iesaistīti industriālo un mājsaimniecību saules paneļu sistēmu ierīkošanā projektos ar kopējo jaudu</p>
             <div class="total-mw-installed">
-                <span class="mw-number" id="mwInstalled">5</span>
+                <span class="mw-number" id="mwInstalled">0.5</span>
                 <span class="mw-label">MW</span>
             </div>
     </section>
@@ -240,7 +242,7 @@
     <footer id="contact">
         <div class="container">
             <!-- Office Address Section -->
-            <h3>Office</h3>
+            <h3>Ofiss</h3>
             <p class="office-info">
                 SIA "Sunzen Solutions"<br>
                 Dzirnavu iela 3-38<br>
@@ -248,21 +250,29 @@
                 <strong>Registration number:</strong> 40203587713
             </p>
             <!-- Contact Information Section -->
-            <h3>Contact Us</h3>
+            <h3>Kontakti</h3>
             <p class="contact-info">
                 <strong>Phone:</strong> +371  28739010<br>
                 <strong>Email:</strong> <a href="mailto:sunzenlv@gmail.com">sunzenlv@gmail.com</a>
             </p>
             <!-- Follow Us Section -->
-            <h3>Follow Us</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com" target="_blank" class="social-btn linkedin">LinkedIn</a>
-                <a href="https://www.facebook.com" target="_blank" class="social-btn facebook">Facebook</a>
-                <a href="https://www.twitter.com" target="_blank" class="social-btn twitter">Twitter</a>
+            <h3>Seko mums</h3>
+            <!-- Social Links Section -->
+            <div class="social-links d-flex justify-content-center mt-4">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin mx-2" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook mx-2" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank" class="social-icon x-com mx-2" aria-label="X.com">
+                    <i class="fas fa-times"></i> <!-- Using "times" icon to represent X -->
+                </a>
             </div>
         </div>
         <p>&copy; 2024 SunZen Solutions</p>
     </footer>
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
