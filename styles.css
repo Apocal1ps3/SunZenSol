@@ -210,7 +210,7 @@ html {
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-top: 45px; /* You can also adjust this value if needed */
 }
 
@@ -319,7 +319,6 @@ html {
 
 h2 {
     font-size: 2rem;
-    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -632,7 +631,7 @@ footer {
         width: 100%
     }
     .benefit-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .company-name {
         font-size: 1rem; /* Adjust as needed */
@@ -646,12 +645,12 @@ footer {
     }
 
     .hero h2 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         margin-bottom: 5px; /* Adjust this value for more or less space */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .hero .container {
@@ -659,14 +658,14 @@ footer {
     }
 
     .benefit-small-text {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         width: 190px;
         line-height: 1.5;
     }
 
     .benefit-description-box p {
         margin: -10px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .benefit-description-box {
@@ -697,20 +696,31 @@ footer {
     }
 
     .detail-image img {
-        max-width: 200px;
-        width: 100%;
+        max-width: 250px;
         height: auto;
         border-radius: 10px;
     }
 
     .detail-text h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .detail-text p {
         font-size: 0.5rem;
         color: #333;
+    }
+
+    .service-detail {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .detail-content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
     }
 
     .video-background {
