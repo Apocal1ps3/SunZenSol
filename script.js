@@ -45,3 +45,28 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// Select all gallery items
+const galleryItems = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.querySelector('.lightbox-image');
+const closeBtn = document.querySelector('.close');
+
+// Open lightbox when an image is clicked
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImage.src = item.src; // Set lightbox image source to the clicked image
+    });
+});
+
+// Close lightbox
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+// Close lightbox when clicking outside the image
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
